@@ -4,7 +4,6 @@ import { TodosComponent } from './todos/todos.component';
 import { Amplify } from 'aws-amplify';
 import outputs from '../../amplify_outputs.json';
 import { AmplifyAuthenticatorModule,AuthenticatorService } from '@aws-amplify/ui-angular';
-import { ConstructOrder } from 'constructs';
 Amplify.configure(outputs);
 
 @Component({
@@ -17,7 +16,7 @@ Amplify.configure(outputs);
 export class AppComponent { 
   title = 'amplify-angular-template';
   constructor(public authenticator: AuthenticatorService){
-    
+
   Amplify.configure(outputs);
 }
   
